@@ -6,7 +6,7 @@ const Navbar = () => {
     <li>      <NavLink
                     to='/'
                     className={({ isActive }) =>
-                      isActive ? 'underline' : ''
+                      isActive ? 'underline text-white' : ''
                     }
                   >
                    Home
@@ -14,7 +14,7 @@ const Navbar = () => {
     <li>      <NavLink
                     to='/'
                     className={({ isActive }) =>
-                      isActive ? 'underline' : ''
+                      isActive ? 'underline text-white' : ''
                     }
                   >
                    Add Task
@@ -22,7 +22,7 @@ const Navbar = () => {
     <li>      <NavLink
                     to='/'
                     className={({ isActive }) =>
-                      isActive ? 'underline' : ''
+                      isActive ? 'underline text-white' : ''
                     }
                   >
                    Task Management
@@ -30,7 +30,7 @@ const Navbar = () => {
     <li>      <NavLink
                     to='/'
                     className={({ isActive }) =>
-                      isActive ? 'underline' : ''
+                      isActive ? 'underline text-white' : ''
                     }
                   >
                    Login
@@ -39,7 +39,7 @@ const Navbar = () => {
     
     </>
     return (
-        <div className="bg-[#FFFBF0]">
+        <div className="bg-violet-800">
            <div className="navbar  max-w-7xl mx-auto">
   <div className="navbar-start">
     <div className="dropdown">
