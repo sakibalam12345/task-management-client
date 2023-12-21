@@ -2,8 +2,8 @@
 
 const Addtask = () => {
     return (
-        <div>
-            <h2>add task page</h2>
+        <div className=" ml-[600px]">
+            <h2 className="mt-16 font-extrabold text-4xl underline text-violet-600">ADD TASK</h2>
         </div>
     );
 };

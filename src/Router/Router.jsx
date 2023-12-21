@@ -4,8 +4,11 @@ import Errorpage from "../Errorpage/Errorpage";
 import Home from "../Page/Home/Home";
 import Login from "../Page/Login/Login";
 import Signup from "../Page/Signup/Signup";
-import Addtask from "../Page/Addtask/Addtask";
+
 import Ouruser from "../Page/OurUser/Ouruser";
+import Dashboard from "../Page/Dashboard/Dashboard";
+import Addtask from "../Page/Addtask/Addtask";
+
 
 
 const router = createBrowserRouter([
@@ -32,6 +35,19 @@ const router = createBrowserRouter([
         }
       ]
     },
+    
+    {
+      path : '/dashboard',
+      element : <Dashboard></Dashboard>,
+      children : [
+        {
+          path : '/dashboard/addtask',
+          element : <Addtask></Addtask>
+        },
+      
+      ]
+    },
+    
   ]);
 
   export default router

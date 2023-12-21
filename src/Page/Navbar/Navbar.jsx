@@ -17,16 +17,9 @@ const Navbar = () => {
                       isActive ? 'underline text-white' : ''
                     }
                   >
-                   Our User
+                   For Whom?
                   </NavLink></li>
-    <li>      <NavLink
-                    to='/'
-                    className={({ isActive }) =>
-                      isActive ? 'underline text-white' : ''
-                    }
-                  >
-                   Task Management
-                  </NavLink></li>
+ 
     <li>      <NavLink
                     to='/login'
                     className={({ isActive }) =>
