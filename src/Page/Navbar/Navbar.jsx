@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -28,7 +28,7 @@ const Navbar = () => {
                    Task Management
                   </NavLink></li>
     <li>      <NavLink
-                    to='/'
+                    to='/login'
                     className={({ isActive }) =>
                       isActive ? 'underline text-white' : ''
                     }
@@ -58,7 +58,10 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
+    <Link to='/login'>
     <a className="btn">Login</a>
+    </Link>
+    
   </div>
 </div>
         </div>

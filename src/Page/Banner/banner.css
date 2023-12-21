@@ -1,8 +1,21 @@
 .bg {
     background-image: url('https://i.ibb.co/q04mvN5/task-management-concept-banner-header-vector-24529046.jpg');
-   height: 750px;
-   
+    height: 750px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media (max-width: 768px) {
+    .bg {
+        height: 500px; /* Adjust the height for medium devices */
+    }
+}
+
+/* Media Query for Small Devices */
+@media (max-width: 425px) {
+    .bg {
+        height: 250px; /* Adjust the height for small devices */
+    }
+}
+

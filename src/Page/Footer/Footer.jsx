@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className="mt-32 bg-violet-700 text-white">
             <footer className="footer p-10  text-neutral-content max-w-7xl mx-auto">
-  <aside>
+  <aside className='lg:ml-0 md:ml-0 ml-20'>
   <img className="w-[40px] h-[40px]" src="https://i.ibb.co/YhHVTtd/Task-Logo-fullcol-Copy-561x480.png" alt="" />
   <p className='text-lg font-medium'>Task Management</p>
     
