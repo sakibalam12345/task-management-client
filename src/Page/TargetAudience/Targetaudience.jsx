@@ -5,6 +5,7 @@ const Targetaudience = () => {
         <div className="mt-28 max-w-7xl mx-auto">
             <h3 className="text-center font-extrabold text-6xl text-violet-800 mb-32 underline">Target Audience</h3>
             <div className="lg:grid md:grid lg:grid-cols-3 md:grid-cols-2 lg:gap-10 md:gap-5 md:ml-0 lg:ml-0 ml-6">
+            <div data-aos="fade-right">
             <div className="card w-96 bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
     <img src="https://i.ibb.co/0j6rSZb/360-F-274198609-QWbx-Yb-Ln-Za-Vb-SW8-UPRl-Cvs7ui1r-O5-Zz-L.jpg" alt="Shoes" className="rounded-xl h-[250px]" />
@@ -14,8 +15,9 @@ const Targetaudience = () => {
     <p className="text-violet-400 font-medium">Streamline your coding projects, manage deadlines, and collaborate effortlessly with your team.</p>
    
   </div>
-</div>
+</div></div>
 {/* 2nd */}
+<div data-aos="zoom-in">
             <div className="card w-96 bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
     <img src="https://i.ibb.co/cY4RQtJ/banker-icon-logo-isolated-sign-600nw-2196112403.webp" alt="Shoes" className="rounded-xl h-[250px]" />
@@ -25,8 +27,9 @@ const Targetaudience = () => {
     <p className="text-violet-400 font-medium">Optimize your financial workflows, track transactions, and manage deadlines with precision.</p>
    
   </div>
-</div>
+</div></div>
 {/* 3rd */}
+<div data-aos="fade-left">
             <div className="card w-96 bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
     <img  src="https://i.ibb.co/0Fnthg4/graduated-student-icon-vector-stock-photo.webp" alt="Shoes" className="rounded-xl h-[250px]" />
@@ -36,8 +39,9 @@ const Targetaudience = () => {
     <p className="text-violet-400 font-medium">Stay on top of assignments, deadlines, and study schedules with an organized approach to academic tasks.</p>
    
   </div>
-</div>
+</div></div>
 {/* 4th */}
+<div data-aos="fade-right">
             <div className="card w-96 bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
     <img src="https://i.ibb.co/PCcMmdJ/istockphoto-1316257996-612x612.jpg" alt="Shoes" className="rounded-xl h-[250px]" />
@@ -47,8 +51,9 @@ const Targetaudience = () => {
     <p className="text-violet-400 font-medium">Manage multiple projects, deadlines, and client communications in one centralized platform.</p>
    
   </div>
-</div>
+</div></div>
 {/* [5th] */}
+<div data-aos="zoom-in">
             <div className="card w-96 bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
     <img src="https://i.ibb.co/zsfPSxL/entrepreneur-linear-icon-modern-outline-logo-conce-concept-white-background-startup-strategy-success.jpg" alt="Shoes" className="rounded-xl h-[250px]" />
@@ -58,8 +63,9 @@ const Targetaudience = () => {
     <p className="text-violet-400 font-medium">Effectively manage tasks, milestones, and goals to drive the success of your business ventures.</p>
    
   </div>
-</div>
+</div></div>
 {/* 6th */}
+<div data-aos="fade-left">
             <div className="card w-96 bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
     <img src="https://i.ibb.co/xzx4GXQ/ISS-28352-32794.webp" alt="Shoes" className="rounded-xl h-[250px]" />
@@ -69,7 +75,7 @@ const Targetaudience = () => {
     <p className="text-violet-400 font-medium">Juggle family responsibilities with ease by organizing household tasks and schedules in one place.</p>
    
   </div>
-</div>
+</div></div>
             </div>
         </div>
     );

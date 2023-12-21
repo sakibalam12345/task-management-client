@@ -12,12 +12,12 @@ const Navbar = () => {
                    Home
                   </NavLink></li>
     <li>      <NavLink
-                    to='/'
+                    to='/ouruser'
                     className={({ isActive }) =>
                       isActive ? 'underline text-white' : ''
                     }
                   >
-                   Add Task
+                   Our User
                   </NavLink></li>
     <li>      <NavLink
                     to='/'
@@ -59,7 +59,7 @@ const Navbar = () => {
   </div>
   <div className="navbar-end">
     <Link to='/login'>
-    <a className="btn">Login</a>
+    <a className="btn bg-violet-300 border-0">Login</a>
     </Link>
     
   </div>
