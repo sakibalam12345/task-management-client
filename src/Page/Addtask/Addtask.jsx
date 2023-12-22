@@ -7,7 +7,7 @@ const Addtask = () => {
     const { register, handleSubmit,reset, } = useForm()
     const onSubmit = async (data) => {
         console.log(data)
-        const res = await axios.post('http://localhost:3000/task',data)
+        const res = await axios.post('https://task-management-server-kappa-hazel.vercel.app',data)
         .then(result=>{
             console.log(result.data)
             if(result.data.insertedId){
