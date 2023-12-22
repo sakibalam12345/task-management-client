@@ -8,6 +8,7 @@ import Signup from "../Page/Signup/Signup";
 import Ouruser from "../Page/OurUser/Ouruser";
 import Dashboard from "../Page/Dashboard/Dashboard";
 import Addtask from "../Page/Addtask/Addtask";
+import Privateroute from "../Page/Privateroute/Privateroute";
 
 
 
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
     
     {
       path : '/dashboard',
-      element : <Dashboard></Dashboard>,
+      element :<Privateroute><Dashboard></Dashboard></Privateroute> ,
       children : [
         {
           path : '/dashboard/addtask',
