@@ -9,6 +9,7 @@ import Ouruser from "../Page/OurUser/Ouruser";
 import Dashboard from "../Page/Dashboard/Dashboard";
 import Addtask from "../Page/Addtask/Addtask";
 import Privateroute from "../Page/Privateroute/Privateroute";
+import Mytask from "../Page/Mytask/Mytask";
 
 
 
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
           path : '/dashboard/addtask',
           element : <Addtask></Addtask>
         },
+        {
+          path : '/dashboard/mytask',
+          element : <Mytask></Mytask>
+        }
       
       ]
     },

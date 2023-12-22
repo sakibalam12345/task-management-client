@@ -27,7 +27,7 @@ const Dashboard = () => {
                    ADD TASK
                   </NavLink></li>
                 <li>      <NavLink
-                    to='/'
+                    to='/dashboard/mytask'
                     className={({ isActive }) =>
                       isActive ? ' border-b-2 border-black text-red-5' : ''
                     }

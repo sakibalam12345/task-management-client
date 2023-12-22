@@ -12,8 +12,7 @@ const Addtask = () => {
             console.log(result.data)
             if(result.data.insertedId){
                 reset(); 
-                toast('Task added successfully');
-                
+                toast('Task added successfully'); 
             }
         })
         .catch(err=>{
