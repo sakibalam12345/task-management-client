@@ -3,11 +3,20 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Authprovider/Authprovider";
 import { toast } from "react-toastify";
 
+import { FaGoogle } from 'react-icons/fa';
+
 
 const Login = () => {
-  const {user,login} = useContext(AuthContext);
+  const {user,login,googlelogin} = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
+  const handlegoogle = ()=>{
+    googlelogin()
+    .then(res=>{
+      console.log(res.user)
+      navigate('/')
+    })
+  }
 
   const from = location.state?.from?.pathname || '/'
   const handlelogin = e =>{
@@ -53,6 +62,8 @@ const Login = () => {
         </div>
       </form>
       <h3>Dont Have An Account? Please <Link to='/signup' className="text-red-500">SignUP</Link> </h3>
+      
+      <h3 className="text-center block"> Login With <button onClick={handlegoogle}><FaGoogle className="inline-block ml-2"></FaGoogle></button></h3>
     </div>
   </div>
 </div>

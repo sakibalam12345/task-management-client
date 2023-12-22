@@ -15,12 +15,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    
+  
     <Authprovider>
     <RouterProvider router={router} />
     <ToastContainer  position="top-center" />
-    
     </Authprovider>
+    
  
     
     

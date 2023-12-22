@@ -2,13 +2,21 @@ import { useContext } from "react";
 import { Link, useNavigate,   } from "react-router-dom";
 import { AuthContext } from "../../Authprovider/Authprovider";
 import { toast } from "react-toastify";
+import { FaGoogle } from "react-icons/fa";
 
 
 
 const Signup = () => {
 
-  const {user,createnewuser,updateuserprofile} = useContext(AuthContext);
+  const {user,createnewuser,updateuserprofile,googlelogin} = useContext(AuthContext);
   const navigate = useNavigate();
+  const handlegoogle = ()=>{
+    googlelogin()
+    .then(res=>{
+      console.log(res.user)
+      navigate('/')
+    })
+  }
   const handlesignup = e =>{
     e.preventDefault();
     const form = e.target;
@@ -76,6 +84,7 @@ const Signup = () => {
         </div>
       </form>
       <h3>Already Have An Account? Please <Link to='/login' className="text-red-500">Login</Link> </h3>
+      <h3 className="text-center block"> Login With <button onClick={handlegoogle}><FaGoogle className="inline-block ml-2"></FaGoogle></button></h3>
     </div>
   </div>
 </div>
